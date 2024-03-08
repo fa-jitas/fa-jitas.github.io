@@ -35,8 +35,7 @@ width: 85px;
         Use flexbox to create equal spacing between each box. */
         display: flex;
         flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-evenly;
+        justify-content: space-between;
         /* idk what im doing */
 }
 .dashboard--classes__box{
