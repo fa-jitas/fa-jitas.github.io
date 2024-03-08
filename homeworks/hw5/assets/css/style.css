@@ -24,7 +24,7 @@ width: 85px;
         the three dot button icon that you added previously. Align them to the 
         center of each item. */
         display: flex;
-        /* flex-direction: row; do i need to add row to this? @john*/
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
@@ -36,7 +36,6 @@ width: 85px;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        row-gap: 20px;
         justify-content: space-evenly;
         /* idk what im doing */
 }
@@ -99,7 +98,5 @@ div .dashboard--classes__box:hover {
         to align the announcement icon and the text box. */
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-
-                                      
+        align-items: flex-start;                                   
 }
