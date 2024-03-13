@@ -1,0 +1,308 @@
+
+/* header code */
+body {
+    margin:0;
+    display: block;
+}
+
+/* code for both pages */
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;  
+    padding-left: 155px;
+}
+
+.nav--button {
+    cursor: pointer;
+}
+/* not sure why its not working these text decorations */
+
+.nav--button--home a{
+    text-decoration: none;
+    color: black;
+}
+.nav--button--menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    position: relative;
+    font-family: sans-serif;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px); 
+    display: flex;
+    justify-content: space-around;
+    background-color: #6F6868;
+    color: white;
+    padding: 20px;
+}
+
+.footer--nav h3 {
+    margin-bottom: 10px;
+    color: white; /* Style the headings */
+}
+
+.footer--nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.footer--nav ul li {
+    margin-bottom: 5px;
+}
+
+
+.contact-info p {
+    margin: 7px 0;
+}
+
+
+/* code for home page */
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+.main {
+    padding-top: 10px;
+    /* padding-bottom: 40px; */
+}
+
+.menu--icons--container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: -40px;
+} 
+
+.menu--icons {
+    margin: 15px;
+    cursor: pointer;
+  }
+
+/* fix */
+.nav-line {
+    height: 2px;
+    background-color: #3333;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+}
+
+
+
+/* button */
+button[type=button] {
+    background-color: #3F4855; 
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    align-items: right;
+}
+
+button[type=button]:hover {
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+
+/* code for menu page */
+.nav2 {
+    display: flex;
+    align-items:center;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+    background-color: #EEEDED;
+    border: 0.2px solid rgb(195, 195, 195);
+}
+
+.drinks {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.nav2--button {
+    margin-left: 55px;
+    padding-top: 10px;
+    margin-right: 1cm;
+    cursor: pointer;
+
+}
+
+.drinks {
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+/* how to make it so each button that is pressed = underline */
+.nav--button--all{
+border-bottom: 1px solid #000;
+padding-bottom: 5px;
+padding-left: 1px;
+}
+ 
+.filter {
+   flex: 0 0 200px;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: left ;
+    margin-left: 20px;
+    margin-top: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+.menu-main { 
+    display: flex;
+}
+
+
+.main--coffeeimg {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#coffeegrounds {
+    max-height: 270px;
+    display: block;
+    height: auto;
+    border-radius: 0px 80px 80px 0px;
+    width: 80%;
+}
+
+.main--textbox{
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+    width: 40%;
+    padding: 10px 20px;
+    padding-left: 100;
+    text-align: left;
+    color: black;
+    background-color: white;
+    opacity: 80%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main--coffeeimg2{
+    background-color: #3F4855;
+    color: white;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 80px;
+    border-radius: 80px 0 0 80px;
+    left: 20px;
+    display: inline-flex;
+    height: 250px;
+    overflow: auto;
+    text-align: right;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 26;
+}
+
+p {
+    font-size: 14px;
+}
+.main--textbox2 {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 50%;
+}
+
+#pouringcoffee {
+    right: 0;
+    top: 0%;
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+}
+
+
+/* category session */
+.product--containers {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; /* Adjust alignment */
+    row-gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    max-width: 899px; /* 225 * 3 = 675px, 225 * 4 = 900px */
+}
+
+
+.category--classes_box {
+    width: 225px; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.category--classes_box_image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.category--classes_box_image img {
+    max-height: 200px;
+}
+
+.category--classes_box_description {
+    background-color: #D9D9D9;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.category--classes_box_text {
+    background-color: #D9D9D9;
+    align-items: left;   
+    padding: 10px 80px 15px 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+button[type=cartbutton] {
+    width: 125px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+
+
+
+
+
